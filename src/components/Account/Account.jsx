@@ -85,7 +85,12 @@ function Account() {
                 key={key}
                 onClick={async () => {
                   try {
-                    await authenticate({ provider: connectorId });
+                  await authenticate({
+                      signingMessage:
+                        "Veuillez confirmer la signature de Yustura",
+                      provider: connectorId,
+                    });
+                    
                     window.localStorage.setItem("connectorId", connectorId);
                     setIsAuthModalVisible(false);
                   } catch (e) {
