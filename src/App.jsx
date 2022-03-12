@@ -138,14 +138,7 @@ const App = ({ isServerInfo }) => {
         <Text style={{ display: "block" }}></Text>
 
         <Text style={{ display: "block" }}>
-          📖 Read more about{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://moralis.io?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplat"
-          >
-            Name
-          </a>
+          📖 Built with Moralis
         </Text>
       </Footer>
     </Layout>
@@ -178,3 +171,4 @@ export const Logo = () => (
 );
 
 export default App;
+
