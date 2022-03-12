@@ -40,18 +40,29 @@ export default function QuickStart({ isServerInfo }) {
           </>
         }
       >
-        <Timeline mode="left" style={styles.timeline}></Timeline>
+        <Timeline mode="left" style={styles.timeline}>
+          <Timeline.Item dot="👨‍💻">
+            <Text>
+              Welcome to Yustara, a simple way to access DeFi and buy
+              Cryptocurrency
+            </Text>
+          </Timeline.Item>
+        </Timeline>
       </Card>
       <div>
         <Card
           style={styles.card}
           title={
             <>
-              💣 <Text strong={isServerInfo}> News </Text>
+              🔔 <Text strong={isServerInfo}> News </Text>
             </>
           }
         >
-          <Timeline mode="left" style={styles.timeline}></Timeline>
+          <Timeline mode="left" style={styles.timeline}>
+            <Timeline.Item dot="👨‍🚀">
+              <Text> Launch of the Yustura Platform on 03/12/2022 </Text>
+            </Timeline.Item>
+          </Timeline>
         </Card>
         <Card
           style={{ marginTop: "10px", ...styles.card }}
@@ -61,7 +72,14 @@ export default function QuickStart({ isServerInfo }) {
             </>
           }
         >
-          <Timeline mode="left" style={styles.timeline}></Timeline>
+          <Timeline mode="left" style={styles.timeline}>
+            <Timeline.Item dot="🤖">
+              <Text> Number of users : </Text>
+            </Timeline.Item>
+            <Timeline.Item dot="👾">
+              <Text> Number of users online: </Text>
+            </Timeline.Item>
+          </Timeline>
         </Card>
       </div>
     </div>
