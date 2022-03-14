@@ -74,10 +74,10 @@ export default function QuickStart({ isServerInfo }) {
         >
           <Timeline mode="left" style={styles.timeline}>
             <Timeline.Item dot="🤖">
-              <Text> Number of users : </Text>
+              <Text> Number of users : 123 </Text>
             </Timeline.Item>
             <Timeline.Item dot="👾">
-              <Text> Number of users online: </Text>
+              <Text> Number of users online: 7 </Text>
             </Timeline.Item>
           </Timeline>
         </Card>
